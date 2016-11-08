@@ -62,7 +62,7 @@ angular.module('kpApp.controllers')
                 }
             };
 
-            $cordovaSms.send('9944929666', 'Hi Kamal', options)
+            $cordovaSms.send('****', 'Hi Kamal', options)
                 .then(function() {
                     // Success! SMS was sent
                 }, function(error) {
