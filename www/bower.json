@@ -13,7 +13,8 @@
     "ngstorage": "^0.3.11",
     "ngCordova": "^0.1.27-alpha",
     "ng-cordova-oauth": "^0.2.10",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "ionic-calendar": "^0.3.2"
   },
   "private": true
 }

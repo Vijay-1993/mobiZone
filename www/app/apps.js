@@ -12,7 +12,8 @@ var kpApp = angular.module('app', ['ui.router',
     'ngStorage',
     'ngCordova',
     'ngCordovaOauth',
-    'uiGmapgoogle-maps'
+    'uiGmapgoogle-maps',
+    'ui.rCalendar'
 ]);
 
 angular.module('kpApp.providers', []);
