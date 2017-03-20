@@ -1,5 +1,5 @@
 angular.module('app')
-    .run(function($rootScope, $templateCache, $ionicPlatform, $cordovaOauth) {
+    .run(function($rootScope, $templateCache, $ionicPlatform) {
 
         $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
 

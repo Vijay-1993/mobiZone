@@ -1,16 +1,9 @@
 angular.module('app')
-    .config(function($stateProvider, $urlRouterProvider, $httpProvider, uiGmapGoogleMapApiProvider) {
+    .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
 
-        uiGmapGoogleMapApiProvider.configure({
-            key: 'AIzaSyDFberVyWaVDCxFLaRxYLxUuSd4uPb_I2s',
-            v: '3.17',
-            libraries: 'weather,geometry,visualization',
-            language: 'en',
-            sensor: 'false',
-        })
 
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/oauth');
         $stateProvider
 
             .state('app', {
@@ -27,13 +20,7 @@ angular.module('app')
                 url: '/oauth',
                 templateUrl: 'app/modules/auth/oAuth.html',
                 controller: 'oAuthCtrl'
-            })
-
-        .state('app.map', {
-            url: '/map',
-            templateUrl: 'app/modules/map/map.html',
-            controller: 'mapCtrl'
-        });
+            });
 
 
         $httpProvider.defaults.useXDomain = true;

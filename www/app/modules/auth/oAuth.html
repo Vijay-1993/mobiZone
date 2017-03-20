@@ -1,32 +1,33 @@
-<ion-view view-title="oAuth">
+<ion-view view-title="QN Buddy">
     <ion-content>
-        <div class="list">
-            <label class="item item-input">
-                <span class="input-label">Username</span>
-                <input type="text" ng-model="user.username">
-            </label>
-            <label class="item item-input">
-                <span class="input-label">Password</span>
-                <input type="password" ng-model="user.password">
-            </label>
-        </div>
         <div class="padding">
-            <button class="button button-block button-positive" ng-click="signIn(user)">
-                Sign-In
+            <button class="button button-block button-positive" ng-click="TabOpen('Active', '');">
+                Activate All Screens
             </button>
-            <button class="button button-block button-positive" ng-click="faceBooklogIn();">
-                Face book
+            <button class="button button-block button-positive" ng-click="TabOpen(0,'TABCHANGE');">
+                Engg
             </button>
-            <button class="button button-block button-positive" ng-click="googleLogin();">
-                Google +
+            <button class="button button-block button-positive" ng-click="TabOpen(1,'TABCHANGE');">
+                Sales
             </button>
-            <button class="button button-block button-positive" ng-click="sms();">
-                SMS
+            <button class="button button-block button-positive" ng-click="TabOpen(2,'TABCHANGE');">
+                Consultant
             </button>
-            <p class="text-center">
-                <a href="#/home">Forgot password</a>
-            </p>
+            <button class="button button-block button-positive" ng-click="TabOpen(3,'TABCHANGE');">
+                Hr
+            </button>
+            <button class="button button-block button-positive" ng-click="TabOpen(4,'TABCHANGE');">
+                Others
+            </button>
+            <button class="button button-block button-positive" ng-click="TabOpen('Chat','VOICEIMAGE');">
+               Image
+            </button>
+            <button class="button button-block button-positive" ng-click="TabOpen('Chat','CHATMESSAGE');">
+                Send Chat Message
+            </button>
+             <button class="button button-block button-positive" ng-click="videoState = !videoState; TabOpen(videoState,'VIDEOCTRL');">
+                Play Video
+            </button>
         </div>
-        {{details}}
     </ion-content>
 </ion-view>

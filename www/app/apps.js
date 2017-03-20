@@ -10,15 +10,12 @@ var kpApp = angular.module('app', ['ui.router',
     'kpApp.constant',
     'ionic',
     'ngStorage',
-    'ngCordova',
-    'ngCordovaOauth',
-    'uiGmapgoogle-maps',
-    'ui.rCalendar'
+    'ngCordova'
 ]);
 
 angular.module('kpApp.providers', []);
 
-angular.module('kpApp.controllers', ['uiGmapgoogle-maps']);
+angular.module('kpApp.controllers', []);
 
 angular.module('kpApp.factories', []);
 
