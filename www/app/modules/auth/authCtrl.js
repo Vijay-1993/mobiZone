@@ -4,11 +4,12 @@ angular.module('kpApp.controllers')
 
         $scope.videoState = false;
 
-        $scope.TabOpen = function(Action, type) {
+        $scope.TabOpen = function(Action, type, message) {
 
                 var data = {
                     'type': type,
-                    'action': Action
+                    'action': Action,
+                    'message':message
                 }
    
 

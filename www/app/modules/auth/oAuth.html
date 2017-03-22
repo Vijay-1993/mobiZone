@@ -1,7 +1,23 @@
 <ion-view view-title="QN Buddy">
     <ion-content>
         <div class="padding">
-            <button class="button button-block button-positive" ng-click="TabOpen('Active', '');">
+            <button ion-button icon-left ng-click="TabOpen(0,'PRESENTATION')">
+                <ion-icon name="home"></ion-icon>
+                slide1
+            </button>
+            <button ion-button icon-left ng-click="TabOpen(1,'PRESENTATION')">
+                <ion-icon name="home"></ion-icon>
+                slide2
+            </button>
+            <button ion-button icon-left ng-click="TabOpen(2,'PRESENTATION')">
+                <ion-icon name="home"></ion-icon>
+                slide3
+            </button>
+            <button ion-button icon-left ng-click="TabOpen(3,'PRESENTATION')">
+                <ion-icon name="home"></ion-icon>
+                slide4
+            </button>
+            <button class="button button-block button-positive" ng-click="TabOpen('Active', 'DEMO');">
                 Activate All Screens
             </button>
             <button class="button button-block button-positive" ng-click="TabOpen(0,'TABCHANGE');">
@@ -19,14 +35,15 @@
             <button class="button button-block button-positive" ng-click="TabOpen(4,'TABCHANGE');">
                 Others
             </button>
-            <button class="button button-block button-positive" ng-click="TabOpen('Chat','VOICEIMAGE');">
-               Image
-            </button>
-            <button class="button button-block button-positive" ng-click="TabOpen('Chat','CHATMESSAGE');">
+            <input type="text" ng-model='message'>
+            <button class="button button-block button-positive" ng-click="TabOpen('Chat','CHATMESSAGE',message);">
                 Send Chat Message
             </button>
-             <button class="button button-block button-positive" ng-click="videoState = !videoState; TabOpen(videoState,'VIDEOCTRL');">
+            <button class="button button-block button-positive" ng-click="videoState = !videoState; TabOpen(videoState,'VIDEOCTRL');">
                 Play Video
+            </button>
+             <button class="button button-block button-positive" ng-click="TabOpen(videocall,'VIDEOCALL');">
+                Video Call
             </button>
         </div>
     </ion-content>
